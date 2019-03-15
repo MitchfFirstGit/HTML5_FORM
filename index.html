@@ -59,7 +59,7 @@
           </header>
 
           <section class="transtale-section">
-            <h2 class="translate-title">SELECT WHAT YOU WANT TO TRANSLATE</h2>
+            <h2 class="translate-title"> <span>select what you want to translate</span></h2>
 
             <div class="translate-btns">
               <div class="website-section">
@@ -159,7 +159,8 @@
             <h2 class="language-title">
               Choose your language pairings
             </h2>
-            <span>From</span>
+            <div class="main-language">
+              <span>From</span>
             <div class="select-language">
               <select name="languange" id="select" class="select-item" required>
                 <option value="">Language</option>
@@ -168,102 +169,111 @@
                 <option value="kurdish">Kurdish</option>
               </select>
             </div>
-            <span>
-              To
-            </span>
-            <div class="select-language">
-              <select name="languange" id="select" class="select-item" required>
-                <option value="">Language</option>
-                <option value="english">English</option>
-                <option value="arabic" selected>Arabic</option>
-                <option value="kurdish">Kurdish</option>
-              </select>
             </div>
-            <div class="additional-languange">
+            <div class="translate-to-language">
+              <span>
+                To
+              </span>
               <div class="select-language">
-                <select
-                  name="languange"
-                  id="select"
-                  class="select-item"
-                  required
-                >
+                <select name="languange" id="select" class="select-item" required>
                   <option value="">Language</option>
                   <option value="english">English</option>
-                  <option value="arabic">Arabic</option>
-                  <option value="kurdish" selected>Kurdish</option>
+                  <option value="arabic" selected>Arabic</option>
+                  <option value="kurdish">Kurdish</option>
                 </select>
               </div>
-              <button type="button" class="remove-languange"></button>
+              <div class="additional-languange">
+                <div class="select-language">
+                  <select
+                    name="languange"
+                    id="select"
+                    class="select-item"
+                    required
+                  >
+                    <option value="">Language</option>
+                    <option value="english">English</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="kurdish" selected>Kurdish</option>
+                  </select>
+                </div>
+                <button type="button" class="remove-languange"></button>
+              </div>
+              <button type="button" class="add-language">Add</button>
             </div>
-            <button type="button" class="add-language">Add</button>
+            
           </section>
-
-          <section class="tone-section">
-            <h2 class="tone-title">
-              Select your desired tone
-            </h2>
-            <input
-              type="radio"
-              name="tone-btn"
-              id="friendly-tone-radio"
-              class="friendly-tone-radio"
-            />
-            <label class="friendly-tone-label" for="friendly-tone-radio">
-              <span class="comment-icon">Friendly / Casual</span>
-            </label>
-            <input
-              type="radio"
-              name="tone-btn"
-              id="corporate-tone-radio"
-              class="corporate-tone-radio"
-              checked
-            />
-            <label class="corporate-tone-label" for="corporate-tone-radio">
-              <span class="suitcase-icon">Corporate / Pro</span>
-            </label>
-            <input
-              type="radio"
-              name="tone-btn"
-              id="media-tone-radio"
-              class="media-tone-radio"
-            />
-            <label class="media-tone-label" for="media-tone-radio">
-              <span class="megaphone-icon">Media / Formal</span>
-            </label>
-          </section>
-
-          <section class="urgent-job-section">
-            <h2 class="urgent-job-title">
-              Tell us how urgent this job is
-            </h2>
-            <div class="range">
-              <input
-                type="range"
-                name="urgent"
-                min="0"
-                max="2"
-                step="1"
-                value="1"
-                id="range-input"
-                class="range-input"
-              />
-            </div>
-            <div class="range-text">
-              <span>i got time</span>
-              <span class="orange-span">average</span>
-              <span>yesterday</span>
-            </div>
-            <div class="info">
-              <h2 class="info-header">
-                timeline info
+          <section  class="section-row">
+            <section class="tone-section">
+              <h2 class="tone-title">
+                Select your desired tone
               </h2>
-              <p class="info-text">
-                With an <span>average</span> timeline set up, our expert
-                translator can take a reasonable amount of time perfecting your
-                translation
-              </p>
-            </div>
+              <input
+                type="radio"
+                name="tone-btn"
+                id="friendly-tone-radio"
+                class="friendly-tone-radio"
+              />
+              <label class="friendly-tone-label" for="friendly-tone-radio">
+                <span class="comment-icon">Friendly / Casual</span>
+              </label>
+              <input
+                type="radio"
+                name="tone-btn"
+                id="corporate-tone-radio"
+                class="corporate-tone-radio"
+                checked
+              />
+              <label class="corporate-tone-label" for="corporate-tone-radio">
+                <span class="suitcase-icon">Corporate / Pro</span>
+              </label>
+              <input
+                type="radio"
+                name="tone-btn"
+                id="media-tone-radio"
+                class="media-tone-radio"
+              />
+              <label class="media-tone-label" for="media-tone-radio">
+                <span class="megaphone-icon">Media / Formal</span>
+              </label>
+            </section>
+  
+            <section class="urgent-job-section">
+              <h2 class="urgent-job-title">
+                Tell us how urgent this job is
+              </h2>
+              <div class="urgent-job-subsection">
+                <div class="range">
+                  <input
+                    type="range"
+                    name="urgent"
+                    min="0"
+                    max="2"
+                    step="1"
+                    value="1"
+                    id="range-input"
+                    class="range-input"
+                  />
+                </div>
+                <div class="range-text">
+                  <span>i got time</span>
+                  <span class="orange-span">average</span>
+                  <span>yesterday</span>
+                </div>
+                <div class="info">
+                  <h2 class="info-header">
+                    timeline info
+                  </h2>
+                  <p class="info-text">
+                    With an <span>average</span> timeline set up, our expert
+                    translator can take a reasonable amount of time perfecting your
+                    translation
+                  </p>
+                </div>
+              </div>
+              
+            </section>
           </section>
+          
 
           <section class="payment-section">
             <h2 class="payment-section-title">
@@ -288,39 +298,42 @@
                 />
                 <span class="validation-input"></span>
               </div>
-              <div class="payment-item">
-                <label for="email-input" class="text-label"
-                  >email address</label
-                >
-                <input
-                  type="email"
-                  id="email-input"
-                  class="text-input"
-                  placeholder="example@domaine.com"
-                  required
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  title="name@domain.etc"
-                />
-                <span class="validation-input"></span>
+              <div class="payment-items-in-row">
+                <div class="payment-item">
+                  <label for="email-input" class="text-label"
+                    >email address</label
+                  >
+                  <input
+                    type="email"
+                    id="email-input"
+                    class="text-input"
+                    placeholder="example@domaine.com"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    title="name@domain.etc"
+                  />
+                  <span class="validation-input"></span>
+                </div>
+  
+                <div class="payment-item">
+                  <label for="password-input" class="text-label"
+                    >choose a password</label
+                  >
+                  <input
+                    type="password"
+                    id="password-input"
+                    class="text-input"
+                    name="password"
+                    placeholder="Enter your password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                    title="Minimum 8 characters, UPPERCASE, lowercase and Number"
+                    minlength="6"
+                    required
+                  />
+                  <span class="validation-input"></span>
+                </div>
               </div>
-
-              <div class="payment-item">
-                <label for="password-input" class="text-label"
-                  >choose a password</label
-                >
-                <input
-                  type="password"
-                  id="password-input"
-                  class="text-input"
-                  name="password"
-                  placeholder="Enter your password"
-                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
-                  title="Minimum 8 characters, UPPERCASE, lowercase and Number"
-                  minlength="6"
-                  required
-                />
-                <span class="validation-input"></span>
-              </div>
+              
             </div>
 
             <div class="payment-select">
@@ -409,13 +422,15 @@
                 ><a href="#" class="terms-link">Terms & Conditions</a>
               </label>
             </div>
-
-            <button class="button button-order" type="submit">
-              PLACE ORDER
-            </button>
-            <button class="button button-print" type="button">
-              PRINT A QUOTE
-            </button>
+            <div class="send-button">
+              <button class="button-order" type="submit">
+                PLACE ORDER
+              </button>
+              <button class="button-print" type="button">
+                PRINT A QUOTE
+              </button>
+            </div>
+            
           </section>
         </form>
       </div>
